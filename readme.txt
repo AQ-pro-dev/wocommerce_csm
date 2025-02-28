@@ -1,22 +1,25 @@
-# WooCommerce CSM Plugin
+=== WooCommerce CSM Plugin ===
+Contributors: Abdul Qadeer
+Tags: woocommerce, shipping, payment gateway, custom shipping
+Requires at least: 5.0
+Tested up to: 6.2
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+This custom WooCommerce plugin adds custom shipping methods and payment gateways to your WooCommerce store.
+
+== Description ==
 
 This custom WooCommerce plugin adds custom shipping methods and payment gateways to your WooCommerce store. It includes features for allowing customers to place orders and contact them to share bank details for payment. Additionally, it allows configuring a specific in-person payment method for specific states and dynamically manages shipping costs based on the selected payment method.
 
-## Features
-
-- Custom Shipping Methods
-- Custom Payment Gateway: Contact for Payment
-- Custom Payment Gateway: In Person Payment
-- Dynamic Shipping Cost Management based on Province, Municipality, Municipality District, Shipping Type, and Pickup Location
-- Session Handling for Payment Methods
-
-## Installation
+== Installation ==
 
 1. Download the plugin files and upload them to your WordPress site.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Configure the plugin settings in the WooCommerce settings area.
 
-## Configuration
+== Configuration ==
 
 ### Custom Shipping Methods
 
@@ -34,7 +37,7 @@ This payment gateway allows customers to place an order and contact them to shar
 
 This payment gateway allows customers to pick up products from the store and pay in person. This method is only enabled for specific states of the Dominican Republic. The list of allowed states can be configured in the WooCommerce settings.
 
-## Usage
+== Usage ==
 
 ### Enabling and Configuring Custom Shipping Methods
 
@@ -51,7 +54,7 @@ This payment gateway allows customers to pick up products from the store and pay
 
 This plugin uses AJAX to dynamically manage sessions based on the selected payment method. Ensure that the `csm_script.js` file is properly enqueued and included in your theme's `js` directory.
 
-## Customization
+== Customization ==
 
 You can customize the plugin by editing the following files:
 
@@ -66,18 +69,18 @@ You can customize the plugin by editing the following files:
 - `assets/js/csm_script.js`: Handles the JS and AJAX requests.
 - `assets/css/style.css`: Defines the custom CSS.
 
-## Troubleshooting
+== Troubleshooting ==
 
 - Ensure that the plugin is activated.
 - Ensure that the `csm_script.js` file is properly enqueued and included in the `js` directory of your theme.
 - Check the WooCommerce settings to ensure that the payment gateways are enabled and configured correctly.
 - If you encounter issues with the session handling, ensure that the AJAX requests are being processed correctly by checking the browser console for errors.
 
-## Changelog
+== Changelog ==
 
 ### 1.0.0
 - Initial release with custom shipping methods and payment gateways.
 
-## License
+== License ==
 
 This plugin is licensed under the GNU General Public License v2.0.
